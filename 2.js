@@ -1032,10 +1032,7 @@ const isReportSafe = (report) => {
 const howManyReportsAreSafe = (reports) => {
     let safeReportCount = 0;
     reports.forEach(report => {
-        if (isReportSafe(report)) {
-            console.log(report);
-            safeReportCount++;
-        }
+        if (isReportSafe(report)) safeReportCount++;
     });
     return safeReportCount;
 }
